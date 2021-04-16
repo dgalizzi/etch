@@ -24,6 +24,7 @@
         {{ $resources = $resources | append (resources.Get "css/syntax.css") -}}
     {{ end -}}
 
+	{{ $resources = $resources | append (resources.Get "css/overrides.css") -}}
     {{ $css := $resources | resources.Concat "css/style.css" | minify }}
     {{ printf `<link rel="stylesheet" href="%s">` $css.RelPermalink | safeHTML }}
 
