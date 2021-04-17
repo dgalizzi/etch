@@ -24,6 +24,7 @@ header#banner {
 header#banner a {
     color: #313a3d;
     text-decoration: none;
+    font-family: monospace;
 }
 
 header#banner a:hover {
